@@ -1,0 +1,118 @@
+<div class="ml-20">
+
+    <h2>Step 1 - Test centre details</h2>
+
+    <form fxLayout="row" fxLayoutAlign="center start" name="form" [formGroup]="form">
+
+        <div fxLayout="column" fxFlex="100">
+
+            <div class="mh-10 mr-20" fxLayout="row" fxFlex="100">
+
+                <div fxLayout="column" fxFlex="60">
+
+                    <label class="mb-5">Test Center Name</label>
+                    <input type="text" class="regularInput mr-80" formControlName="firstName" required>
+                </div>
+
+                <div fxLayout="column" fxFlex="40">
+
+                    <label class="mb-5">Test Center Name</label>
+
+                    <div fxLayout="row">
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">New</span>
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">Inactive</span>
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">Suspend</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mh-10 mr-20" fxLayout="row" fxFlex="100">
+
+                <div fxLayout="column" fxFlex="60">
+
+                    <label class="mb-5">IDP code - mandatory field please enter based on 5 characters (AA000)*</label>
+                    <input type="text" class="regularInput mr-80" formControlName="firstName" required>
+                </div>
+
+                <div fxLayout="row" fxFlex="40">
+
+                    <div class="mr-15" fxLayout="column" fxFlex="50">
+                        <label class="mb-5">City*</label>
+                        <input type="text" class="regularInput" formControlName="firstName" required>
+                    </div>
+                    <div class="ml-15" fxLayout="column" fxFlex="50">
+                        <label class="mb-5">Country*</label>
+                        <input type="text" class="regularInput" formControlName="firstName" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mh-10 mr-20" fxLayout="row" fxFlex="100">
+
+                <div fxLayout="column" fxFlex="60">
+
+                    <label class="mb-5">Address 1*</label>
+                    <input type="text" class="regularInput mr-80" formControlName="firstName" required>
+                </div>
+
+                <div fxLayout="row" fxFlex="40">
+
+                    <div class="mr-15" fxLayout="column" fxFlex="50">
+                        <label class="mb-5">Post/Zip Code</label>
+                        <input type="text" class="regularInput" formControlName="firstName" required>
+                    </div>
+                    <div class="ml-15" fxLayout="column" fxFlex="50">
+                        <label class="mb-5">State / Province*</label>
+                        <input type="text" class="regularInput" formControlName="firstName" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mh-10 mr-20" fxLayout="row" fxFlex="100">
+
+                <div fxLayout="column" fxFlex="60">
+
+                    <label class="mb-5">Address 2*</label>
+                    <input type="text" class="regularInput mr-80" formControlName="firstName" required>
+                </div>
+
+                <div fxLayout="row" fxFlex="40">
+
+                    <div class="mr-15" fxLayout="column" fxFlex="50">
+                        <label class="mb-5">Region*</label>
+                        <input type="text" class="regularInput" formControlName="firstName" required>
+                    </div>
+                    <div class="ml-15" fxLayout="column" fxFlex="50">
+                        <label class="visibility-hidden mb-5">Add</label>
+                        <button type="button" class="regularBtn bg-blue">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-10 mr-20" fxLayout="row" fxFlex="100">
+
+                <div fxLayout="column" fxFlex="60">
+
+                    <label class="mb-5">Address Type</label>
+                    <div fxLayout="row">
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">Physical</span>
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">Postal</span>
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">Yes</span>
+                        <input type="radio" class="mr-20" formControlName="firstName" required><span
+                            class="mr-40">No</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+    <button type="button" class="regularBtn bg-orange width-200 mr-20" >Cancel</button>
+    <button type="button" class="regularBtn bg-green width-200" (click)="goToStepTwo()">Next</button>
+</div>
