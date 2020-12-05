@@ -1,0 +1,35 @@
+@import '../../../styles.scss';
+
+.header{
+    
+    height: 80px;
+    background-color: $header-background-color;
+
+    .fa{
+        color : $header-icons;
+    }
+    .fa-search{
+        background-color: $header-background-color;
+        border-left: 1px solid $header-icons;
+    }
+
+    &-searchIcon{
+        position: absolute;
+        height: 80px;
+        z-index: 0;
+        input{
+            width: 0px;
+            padding: 0px;
+            border-width: 0px;
+            transition: width 1s;
+        }
+
+        &:hover{
+            z-index: 100;
+            input{
+                width: 200px;
+            }
+        
+        }  
+    }
+}

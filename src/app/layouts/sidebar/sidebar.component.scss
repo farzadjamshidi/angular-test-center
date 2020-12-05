@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+
+.sideBar{
+    height: calc(100vh - 20px);
+    border: 1px solid $sideBar-border;
+    .sideBar_menu{
+        height: 77px;
+        border-bottom: 1px solid $sideBar-menu-border-bottom;
+        color : $sideBar-menu-deactive;
+        &-active{
+            color : $sideBar-menu-active;        
+        }
+    }
+}

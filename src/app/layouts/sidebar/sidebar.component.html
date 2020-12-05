@@ -1,0 +1,6 @@
+<div fxLayout="column" class="sideBar">
+    <div fxLayout="row" *ngFor="let item of sideBarMenu" [routerLink]="[item.route]" [routerLinkActive]="['sideBar_menu-active']" class="sideBar_menu cursor-pointer">
+        <i [class]="item.iconClass" fxFlex="25" fxLayout="column" fxLayoutAlign="center center"></i>
+        <span class="margin-v-auto" fxFlex="75">{{item.title}}</span>
+    </div>
+</div>
